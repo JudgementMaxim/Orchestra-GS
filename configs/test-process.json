@@ -1,0 +1,17 @@
+{
+    "id": "archipelago-test-01",
+    "type": "process",
+    "enabled": "true",
+    "ressources":  {
+                    "memory": "512m",
+                    "cup":"1.0"
+                    },
+    "settings": {
+        "executable": "/usr/bin/python3",
+        "args": ["-m","http.server", "8080"],
+        "env": {
+            "PYTHONBUFFERED": "1"
+        },
+        "ports": ["8080:8080"]
+    }
+}
